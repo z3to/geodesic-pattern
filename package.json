@@ -1,0 +1,34 @@
+{
+  "name": "geodesic-pattern",
+  "version": "0.0.1",
+  "description": "Geodesic pattern",
+  "author": "Jonas <jonas@parnow.de>",
+  "private": true,
+  "scripts": {
+    "dev": "PORT=3333 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "chroma-js": "^1.3.7",
+    "lodash": "^4.17.10",
+    "nuxt": "^1.4.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-html": "^4.0.5",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "node-sass": "^4.9.3",
+    "normalize-scss": "^7.0.1",
+    "sass-loader": "^7.1.0"
+  }
+}

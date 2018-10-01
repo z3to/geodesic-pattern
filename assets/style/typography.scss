@@ -1,0 +1,31 @@
+hgroup {
+  text-align: center;
+}
+
+h1 {
+  font-size: $size-big;
+}
+
+tr td {
+  font-size: $size-default;
+}
+
+tr th, tr td:first-child {
+  font-size: $size-small;
+}
+
+tr td {
+  padding: $spacing / 4;
+  border: 2px solid #fff;
+  background-color: $color-bg-light;
+  text-align: center;
+  vertical-align: center;
+
+  &:first-child {
+    background-color: #fff;
+  }
+
+  &.active {
+    border-color: yellow;
+  }
+}
