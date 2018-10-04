@@ -8,22 +8,24 @@
 </template>
 
 <script>
-  import { flatten, map } from 'lodash'
+  import { map } from 'lodash'
   import { mapState, mapGetters } from 'vuex'
 
   export default {
     computed: {
       ...mapGetters([
-        'data'
+        'data',
+        'colors'
       ]),
       ...mapState([
         'width',
         'height'
       ]),
       elements () {
-        const chain = flatten(this.data, 2)
-        return map(chain, datum => {
-          const [ points, color, reference ] = datum
+        const { data, colors } = this
+        return map(data, (datum, n) => {
+          const [ points, reference ] = datum
+          const color = colors[n]
           const d = points.map(d => {
             return d.join(',')
           }).join(' ')
